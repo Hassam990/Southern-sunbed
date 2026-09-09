@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Southern Sunbed Hire – Hampshire & Berkshire's premier home sunbed hire. 0.3 EU compliant tubes, free delivery, free goggles, same-day booking. Call 07306 885 759." />
+  <title>Southern Sunbed Hire | Luxury Home Sunbed Hire in Hampshire & Berkshire</title>
+  
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Modern Libraries via CDN with fallback safety -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <aside class="topbar">
+    <div class="topbar__inner container">
+      <div class="topbar__left">
+        <span class="pulse-dot"></span>
+        <span class="topbar__highlight">Now Booking</span>
+        <span class="topbar__sep">·</span>
+        <span>Free Delivery &amp; Setup across Hampshire &amp; Berkshire</span>
+      </div>
+      <div class="topbar__right">
+        <span class="topbar__badge"><i data-lucide="shield-check"></i> 0.3 EU Compliant</span>
+        <span class="topbar__badge"><i data-lucide="glasses"></i> Free UV Goggles</span>
+        <a href="tel:07306885759" class="topbar__phone">
+          <i data-lucide="phone-call"></i> 07306 885 759
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- STICKY GLASS HEADER -->
+  <header class="nav-wrap" id="navWrap">
+    <nav class="nav nav-container">
+      <a href="#home" class="nav__logo" aria-label="Southern Sunbed Hire Home">
+        <span class="logo-script">Southern</span>
+        <span class="logo-divider"></span>
+        <span class="logo-sub-wrap">
+          <span class="logo-sunbed">Sunbed</span>
+          <span class="logo-hire">Hire</span>
+        </span>
+      </a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#home" class="nav__link active">Home</a></li>
+        <li><a href="#sunbeds" class="nav__link">Sunbeds</a></li>
+        <li><a href="#calculator" class="nav__link">Pricing</a></li>
+        <li><a href="#coverage" class="nav__link">Delivery Areas</a></li>
+        <li><a href="#safety" class="nav__link">Safety</a></li>
+        <li><a href="#welcome-pack" class="nav__link">Welcome Pack</a></li>
+        <li><a href="#reviews" class="nav__link">Reviews</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <a href="#contact" class="btn btn--copper btn--sm nav__cta-btn">
+          <i data-lucide="calendar"></i>
+          <span>Book Hire</span>
+        </a>
+        <a href="tel:07306885759" class="nav__phone-btn" title="Call Us 8am - 8pm">
+          <i data-lucide="phone"></i>
+          <span>07306 885 759</span>
+        </a>
+        <button class="nav__burger" id="burger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    
+    <div class="hero__inner container">
+      <div class="hero__content">
+        <div class="hero__eyebrow">
+          <span class="dot-live"></span>
+          <span>Premier Home Solarium Hire · Hampshire &amp; Berkshire</span>
+        </div>
+
+        <h1 class="hero__h1">
+          <span class="hero__line">The Perfect</span>
+          <span class="hero__line hero__line--serif">Sunkissed Tan</span>
+          <span class="hero__line hero__line--accent">In Your Own Home</span>
+        </h1>
+
+        <p class="hero__sub">
+          Experience salon-quality tanning with UK-certified <strong>0.3 safe tanning tubes</strong>. Delivered to your door, fully installed, and collected free of charge. Free goggles and expert instructions included with every booking.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#calculator" class="btn btn--copper btn--lg">
+            <span>Calculate Hire Price</span>
+            <i data-lucide="arrow-right" class="btn__icon"></i>
+          </a>
+          <a href="tel:07306885759" class="btn btn--glass btn--lg">
+            <i data-lucide="phone-call"></i>
+            <span>Call 07306 885 759</span>
+          </a>
+        </div>
+
+        <div class="hero__perks">
+          <div class="perk-item">
+            <i data-lucide="truck"></i>
+            <span>100% Free Delivery &amp; Setup</span>
+          </div>
+          <div class="perk-item">
+            <i data-lucide="glasses"></i>
+            <span>Free UV Goggles Included</span>
+          </div>
+          <div class="perk-item">
+            <i data-lucide="zap"></i>
+            <span>Same-Day Hire Often Available</span>
+          </div>
+          <div class="perk-item">
+            <i data-lucide="shield-check"></i>
+            <span>0.3 EU Compliant Safe Tubes</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO VISUAL SHOWCASE -->
+      <div class="hero__visual">
+        <div class="hero-card-display">
+          <div class="hero-card-display__badge">
+            <i data-lucide="sparkles"></i> Featured Solarium
+          </div>
+          <div class="hero-card-display__image-wrap">
+            <img src="assets/caribbean_solarium.jpg" alt="Caribbean 26-Tube Home Solarium Unit" class="hero-card-display__img" loading="eager" />
+            <div class="hero-card-display__glow"></div>
+          </div>
+          <div class="hero-card-display__footer">
+            <div>
+              <strong>Caribbean 26-Tube Solarium</strong>
+              <p>Full 360° Body Breeze &amp; RUVA Tubes</p>
+            </div>
+            <a href="#sunbeds" class="btn btn--sm btn--copper">Explore Specs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TICKER STRIP -->
+    <div class="ticker-strip" aria-hidden="true">
+      <div class="ticker__track">
+        <span><i data-lucide="truck"></i> Free Delivery &amp; Collection</span>
+        <span class="ticker__star">✦</span>
+        <span><i data-lucide="shield"></i> 0.3 EU Compliant Safety Standards</span>
+        <span class="ticker__star">✦</span>
+        <span><i data-lucide="clock"></i> Same-Day Delivery Available</span>
+        <span class="ticker__star">✦</span>
+        <span><i data-lucide="map-pin"></i> Hampshire &amp; Berkshire Delivery</span>
+        <span class="ticker__star">✦</span>
+        <span><i data-lucide="sparkles"></i> Free UV Protective Goggles</span>
+        <span class="ticker__star">✦</span>
+        <span><i data-lucide="check-circle"></i> Short &amp; Long-Term Hire</span>
+        <span class="ticker__star">✦</span>
+        <!-- Duplicated for continuous loop -->
+        <span><i data-lucide="truck"></i> Free Delivery &amp; Collection</span>
+        <span class="ticker__star">✦</span>
+        <span><i data-lucide="shield"></i> 0.3 EU Compliant Safety Standards</span>
+        <span class="ticker__star">✦</span>
+        <span><i data-lucide="clock"></i> Same-Day Delivery Available</span>
+        <span class="ticker__star">✦</span>
+        <span><i data-lucide="map-pin"></i> Hampshire &amp; Berkshire Delivery</span>
+        <span class="ticker__star">✦</span>
+        <span><i data-lucide="sparkles"></i> Free UV Protective Goggles</span>
+        <span class="ticker__star">✦</span>
+        <span><i data-lucide="check-circle"></i> Short &amp; Long-Term Hire</span>
+        <span class="ticker__star">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK POSTCODE DELIVERY CHECKER -->
+  <section class="section postcode-checker-section" id="coverage">
+    <div class="container">
+      <div class="postcode-checker-box">
+        <div class="pc-content">
+          <div class="pc-header">
+            <span class="badge badge--copper"><i data-lucide="map-pin"></i> Check Availability</span>
+            <h2>Free Delivery In Your Area?</h2>
+            <p>Enter your town or UK postcode to confirm instant availability and free installation.</p>
+          </div>
+          <form class="pc-form" id="postcodeForm" onsubmit="return false;">
+            <div class="pc-input-group">
+              <i data-lucide="search" class="pc-input-icon"></i>
+              <input type="text" id="postcodeInput" placeholder="e.g. RG21, Reading, Basingstoke, SO14..." autocomplete="off" />
+              <button type="button" id="checkPostcodeBtn" class="btn btn--copper">
+                <span>Check Area</span>
+                <i data-lucide="arrow-right"></i>
+              </button>
+            </div>
+            <div id="postcodeResult" class="pc-result" style="display: none;"></div>
+          </form>
+          <div class="pc-pills">
+            <span class="pc-pill-label">Fast delivery to:</span>
+            <button type="button" class="area-tag" data-area="Basingstoke">Basingstoke (RG21)</button>
+            <button type="button" class="area-tag" data-area="Reading">Reading (RG1)</button>
+            <button type="button" class="area-tag" data-area="Farnborough">Farnborough (GU14)</button>
+            <button type="button" class="area-tag" data-area="Newbury">Newbury (RG14)</button>
+            <button type="button" class="area-tag" data-area="Andover">Andover (SP10)</button>
+            <button type="button" class="area-tag" data-area="Southampton">Southampton (SO14)</button>
+            <button type="button" class="area-tag" data-area="Winchester">Winchester (SO23)</button>
+            <button type="button" class="area-tag" data-area="Guildford">Guildford (GU1)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUNBED UNITS SECTION -->
+  <section class="section sunbeds-section" id="sunbeds">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="section-tag"><i data-lucide="sun"></i> Premium Equipment</span>
+        <h2 class="section-title">Our Salon-Grade <em>Tanning Solariums</em></h2>
+        <p class="section-desc">Every unit is fitted with genuine 0.3 compliant tubes, delivered, fully assembled, and sanitized at your home with free collection.</p>
+        
+        <!-- GLOW TOGGLE SWITCH -->
+        <div class="glow-mode-toggle">
+          <span class="glow-label"><i data-lucide="moon"></i> Ambient View</span>
+          <label class="switch">
+            <input type="checkbox" id="uvGlowToggle" checked />
+            <span class="slider round"></span>
+          </label>
+          <span class="glow-label active"><i data-lucide="sun-medium"></i> UV Tanning Glow</span>
+        </div>
+      </div>
+
+      <div class="sunbeds-grid">
+
+        <!-- UNIT 1: CARIBBEAN 26 TUBE -->
+        <article class="bed-card bed-card--featured" data-bed="caribbean">
+          <div class="bed-card__badge-popular">
+            <i data-lucide="flame"></i> Most Popular
+          </div>
+          
+          <div class="bed-card__media">
+            <img src="assets/caribbean_solarium.jpg" alt="Caribbean 26 Tube Vertical Solarium" class="bed-card__img" loading="lazy" />
+            <div class="bed-card__uv-glow uv-glow--active"></div>
+            <div class="bed-card__overlay-tag">Vertical Stand-Up Solarium</div>
+          </div>
+
+          <div class="bed-card__content">
+            <div class="bed-card__head">
+              <h3>Caribbean 26-Tube</h3>
+              <span class="bed-price-tag">From £45 / week</span>
+            </div>
+            
+            <p class="bed-card__desc">
+              The pinnacle of home solariums. Engineered to provide full 360-degree all-over tanning coverage with close proximity tubes and integrated body breeze ventilation.
+            </p>
+
+            <div class="bed-card__specs">
+              <div class="spec-pill"><i data-lucide="zap"></i> 26 × 6ft Evolution 0.3 Tubes</div>
+              <div class="spec-pill"><i data-lucide="wind"></i> Customer Operated Body Breeze</div>
+              <div class="spec-pill"><i data-lucide="timer"></i> Dual 10-Min Safety Timers</div>
+              <div class="spec-pill"><i data-lucide="maximize-2"></i> Spacious Internal Standing Area</div>
+            </div>
+
+            <div class="bed-card__footer">
+              <button type="button" class="btn btn--copper btn--full select-bed-btn" data-bed-name="Caribbean 26-Tube (Most Popular)" data-bed-rate="55">
+                <i data-lucide="calculator"></i> Calculate Hire Price
+              </button>
+              <a href="#contact" class="btn btn--outline-copper btn--full quick-book-btn" data-bed-name="Caribbean 26-Tube (Most Popular)">
+                Book This Unit Direct
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- UNIT 2: ELITE DOUBLE LIE DOWN -->
+        <article class="bed-card" data-bed="elite-double">
+          <div class="bed-card__media">
+            <img src="assets/elite_double.jpg" alt="Elite Double Lie Down Sunbed" class="bed-card__img" loading="lazy" />
+            <div class="bed-card__uv-glow uv-glow--active"></div>
+            <div class="bed-card__overlay-tag">Lie-Down Solarium</div>
+          </div>
+
+          <div class="bed-card__content">
+            <div class="bed-card__head">
+              <h3>Elite Double Lie-Down</h3>
+              <span class="bed-price-tag">From £40 / week</span>
+            </div>
+
+            <p class="bed-card__desc">
+              The ultimate luxury solarium for those who prefer to lie back and relax. Ergonomically contoured base acrylic, curved canopy, and facial tanning boost.
+            </p>
+
+            <div class="bed-card__specs">
+              <div class="spec-pill"><i data-lucide="zap"></i> 18 Fast Tan 0.3 Tubes</div>
+              <div class="spec-pill"><i data-lucide="sparkles"></i> High-Output Facial Boost</div>
+              <div class="spec-pill"><i data-lucide="timer"></i> Precision Twin Safety Timers</div>
+              <div class="spec-pill"><i data-lucide="bed"></i> Ergonomic Comfort Mattress</div>
+            </div>
+
+            <div class="bed-card__footer">
+              <button type="button" class="btn btn--copper btn--full select-bed-btn" data-bed-name="Elite Double Lie Down" data-bed-rate="48">
+                <i data-lucide="calculator"></i> Calculate Hire Price
+              </button>
+              <a href="#contact" class="btn btn--outline-copper btn--full quick-book-btn" data-bed-name="Elite Double Lie Down">
+                Book This Unit Direct
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- UNIT 3: ELITE CANOPY -->
+        <article class="bed-card" data-bed="elite-canopy">
+          <div class="bed-card__media">
+            <img src="assets/elite_canopy.jpg" alt="Elite Canopy Space-Saving Home Sunbed" class="bed-card__img" loading="lazy" />
+            <div class="bed-card__uv-glow uv-glow--active"></div>
+            <div class="bed-card__overlay-tag">Over-Bed Canopy</div>
+          </div>
+
+          <div class="bed-card__content">
+            <div class="bed-card__head">
+              <h3>Elite Canopy Solarium</h3>
+              <span class="bed-price-tag">From £35 / week</span>
+            </div>
+
+            <p class="bed-card__desc">
+              Perfect for space-conscious homes. Mounts on a smooth hydraulic swivel stand that positions comfortably over any existing bed or sofa, storing upright when not in use.
+            </p>
+
+            <div class="bed-card__specs">
+              <div class="spec-pill"><i data-lucide="zap"></i> 9 Fast Tan 0.3 Tubes</div>
+              <div class="spec-pill"><i data-lucide="move"></i> Stands Upright for Easy Storage</div>
+              <div class="spec-pill"><i data-lucide="sparkles"></i> Integrated Facial Boost</div>
+              <div class="spec-pill"><i data-lucide="arrow-up-down"></i> Fully Height Adjustable</div>
+            </div>
+
+            <div class="bed-card__footer">
+              <button type="button" class="btn btn--copper btn--full select-bed-btn" data-bed-name="Elite Canopy" data-bed-rate="38">
+                <i data-lucide="calculator"></i> Calculate Hire Price
+              </button>
+              <a href="#contact" class="btn btn--outline-copper btn--full quick-book-btn" data-bed-name="Elite Canopy">
+                Book This Unit Direct
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- SUNBEDS FOR SALE BANNER -->
+      <div class="sale-banner">
+        <div class="sale-banner__icon">
+          <i data-lucide="shopping-bag"></i>
+        </div>
+        <div class="sale-banner__text">
+          <h4>Looking to Purchase Rather Than Hire?</h4>
+          <p>We supply brand new and fully reconditioned ex-hire solariums with complete warranties. Contact our Basingstoke team for current inventory.</p>
+        </div>
+        <a href="#contact" class="btn btn--dark">Enquire About Sales</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE HIRE PRICE CALCULATOR -->
+  <section class="section calculator-section" id="calculator">
+    <div class="container">
+      <div class="calc-wrapper">
+        <div class="calc-intro">
+          <span class="section-tag"><i data-lucide="calculator"></i> Instant Quote</span>
+          <h2>Customize Your <em>Hire Package</em></h2>
+          <p>Select your preferred solarium and duration to view transparent package pricing with automatic multi-week discounts.</p>
+          
+          <div class="calc-guarantee-list">
+            <div class="cg-item">
+              <i data-lucide="check"></i>
+              <span>No hidden fees — delivery &amp; collection always 100% free</span>
+            </div>
+            <div class="cg-item">
+              <i data-lucide="check"></i>
+              <span>Free UV safety goggles and full sanitization</span>
+            </div>
+            <div class="cg-item">
+              <i data-lucide="check"></i>
+              <span>Small deposit secures booking; pay balance on delivery</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <!-- Step 1: Model Selection -->
+          <div class="calc-group">
+            <label class="calc-group-title">1. Choose Solarium Model</label>
+            <div class="calc-model-options" id="calcModelOptions">
+              <div class="model-pill active" data-unit="Caribbean 26-Tube (Most Popular)" data-rate="55">
+                <div class="mp-info">
+                  <strong>Caribbean 26-Tube</strong>
+                  <span>Stand-Up · Body Breeze</span>
+                </div>
+                <div class="mp-rate">£55/wk base</div>
+              </div>
+              <div class="model-pill" data-unit="Elite Double Lie Down" data-rate="48">
+                <div class="mp-info">
+                  <strong>Elite Double</strong>
+                  <span>Lie-Down · Facial Boost</span>
+                </div>
+                <div class="mp-rate">£48/wk base</div>
+              </div>
+              <div class="model-pill" data-unit="Elite Canopy" data-rate="38">
+                <div class="mp-info">
+                  <strong>Elite Canopy</strong>
+                  <span>Over-Bed · Compact</span>
+                </div>
+                <div class="mp-rate">£38/wk base</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Duration Selection -->
+          <div class="calc-group">
+            <label class="calc-group-title">2. Select Duration (Longer Hire = Bigger Savings)</label>
+            <div class="calc-duration-options" id="calcDurationOptions">
+              <button type="button" class="duration-btn" data-weeks="1" data-discount="0">
+                <span class="d-weeks">1 Week</span>
+                <span class="d-tag">Quick Glow</span>
+              </button>
+              <button type="button" class="duration-btn" data-weeks="2" data-discount="0.10">
+                <span class="d-weeks">2 Weeks</span>
+                <span class="d-tag">10% Off</span>
+              </button>
+              <button type="button" class="duration-btn active" data-weeks="4" data-discount="0.20">
+                <span class="d-weeks">4 Weeks</span>
+                <span class="d-tag d-tag--best">Save 20%</span>
+              </button>
+              <button type="button" class="duration-btn" data-weeks="8" data-discount="0.30">
+                <span class="d-weeks">8 Weeks</span>
+                <span class="d-tag">Save 30%</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3: Add-ons -->
+          <div class="calc-group">
+            <label class="calc-group-title">3. Optional Professional Add-ons</label>
+            <div class="calc-addons">
+              <label class="addon-checkbox">
+                <input type="checkbox" id="addonLotion" data-cost="15" checked />
+                <span class="addon-check-box"></span>
+                <div class="addon-text">
+                  <strong>Professional Tan Accelerator Cream (+£15)</strong>
+                  <span>Maximized melanin stimulation for deeper, longer-lasting tan</span>
+                </div>
+              </label>
+              <label class="addon-checkbox">
+                <input type="checkbox" id="addonGoggles" data-cost="5" />
+                <span class="addon-check-box"></span>
+                <div class="addon-text">
+                  <strong>Second Pair of UV Safety Goggles (+£5)</strong>
+                  <span>1 pair is always free! Add an extra pair for family members</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Calculation Summary Box -->
+          <div class="calc-summary">
+            <div class="calc-summary__row">
+              <span>Selected Unit:</span>
+              <strong id="summaryUnit">Caribbean 26-Tube (Most Popular)</strong>
+            </div>
+            <div class="calc-summary__row">
+              <span>Duration &amp; Discount:</span>
+              <span id="summaryDuration">4 Weeks (20% Discount applied)</span>
+            </div>
+            <div class="calc-summary__row">
+              <span>Delivery &amp; Installation:</span>
+              <strong class="text-green">FREE (£0.00)</strong>
+            </div>
+            <div class="calc-summary__total-row">
+              <div>
+                <span class="tot-label">Estimated Total:</span>
+                <span class="tot-sub">Flexible payment on delivery</span>
+              </div>
+              <div class="tot-amount" id="summaryTotal">£191</div>
+            </div>
+            <button type="button" class="btn btn--copper btn--full btn--lg" id="applyToFormBtn">
+              <span>Proceed With This Package</span>
+              <i data-lucide="arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS TIMELINE -->
+  <section class="section hiw-section" id="how-it-works">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="section-tag"><i data-lucide="sparkles"></i> Effortless Process</span>
+        <h2 class="section-title">How Home Sunbed <em>Hire Works</em></h2>
+        <p class="section-desc">From initial call to glowing tan in 4 simple steps.</p>
+      </div>
+
+      <div class="hiw-grid">
+        <div class="hiw-card">
+          <div class="hiw-card__step">01</div>
+          <div class="hiw-card__icon"><i data-lucide="phone-call"></i></div>
+          <h3>Select &amp; Reserve</h3>
+          <p>Choose your solarium and duration online or call <strong>07306 885 759</strong>. We confirm availability and reserve your slot instantly.</p>
+        </div>
+
+        <div class="hiw-card">
+          <div class="hiw-card__step">02</div>
+          <div class="hiw-card__icon"><i data-lucide="credit-card"></i></div>
+          <h3>Simple Deposit</h3>
+          <p>A small deposit secures your booking date. The remaining balance is paid conveniently when we deliver and set up the unit.</p>
+        </div>
+
+        <div class="hiw-card">
+          <div class="hiw-card__step">03</div>
+          <div class="hiw-card__icon"><i data-lucide="truck"></i></div>
+          <h3>Free Delivery &amp; Setup</h3>
+          <p>Our experienced technicians deliver, assemble upstairs or downstairs, test the tubes, and supply free UV goggles with instructions.</p>
+        </div>
+
+        <div class="hiw-card">
+          <div class="hiw-card__step">04</div>
+          <div class="hiw-card__icon"><i data-lucide="sun"></i></div>
+          <h3>Tan &amp; Free Pickup</h3>
+          <p>Tan at your own leisure in total comfort. When your hire finishes, we collect free of charge — or you can extend your hire easily!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAFE TANNING & 0.3 EU STANDARD -->
+  <section class="section safety-section" id="safety">
+    <div class="container">
+      <div class="safety-grid">
+        <div class="safety-visual">
+          <div class="safety-seal">
+            <div class="safety-seal__ring">
+              <span class="safety-seal__val">0.3</span>
+              <span class="safety-seal__unit">W/m²</span>
+              <span class="safety-seal__std">EU / UK Safety Limit</span>
+            </div>
+            <div class="safety-seal__badge">
+              <i data-lucide="shield-check"></i> 100% Certified Compliant
+            </div>
+          </div>
+          <div class="safety-info-card">
+            <h4>What does 0.3 W/m² mean?</h4>
+            <p>0.3 W/m² is the maximum safe irradiance level recognized by the European Scientific Committee and UK regulation. It delivers the biological tanning equivalent of midday Mediterranean sun without dangerous excess UV burning.</p>
+          </div>
+        </div>
+
+        <div class="safety-content">
+          <span class="section-tag"><i data-lucide="shield"></i> Safe Responsible Tanning</span>
+          <h2 class="section-title">Your Skin Health &amp; <em>Safety First</em></h2>
+          <p class="safety-lead">We are committed to the highest standards of safety, hygiene, and guidance across all hires in Hampshire &amp; Berkshire.</p>
+
+          <div class="safety-pillars">
+            <div class="pillar">
+              <div class="pillar__icon"><i data-lucide="shield-alert"></i></div>
+              <div>
+                <strong>Strict 18+ Age Verification</strong>
+                <p>In full compliance with The Sunbeds (Regulation) Act 2010. Photo ID is checked upon delivery.</p>
+              </div>
+            </div>
+
+            <div class="pillar">
+              <div class="pillar__icon"><i data-lucide="glasses"></i></div>
+              <div>
+                <strong>Complimentary Certified UV Goggles</strong>
+                <p>Every single hire includes approved protective eye wear free of charge.</p>
+              </div>
+            </div>
+
+            <div class="pillar">
+              <div class="pillar__icon"><i data-lucide="sparkle"></i></div>
+              <div>
+                <strong>Hospital-Grade Sanitization</strong>
+                <p>All units are meticulously sanitized, wiped down, and electrically safety-checked prior to every delivery.</p>
+              </div>
+            </div>
+
+            <div class="pillar">
+              <div class="pillar__icon"><i data-lucide="book-open"></i></div>
+              <div>
+                <strong>Personalized Skin Guidance</strong>
+                <p>Full verbal briefing and written session timer recommendations based on your individual skin sensitivity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE SKIN GUIDE TABS -->
+      <div class="skin-guide-box">
+        <div class="sg-head">
+          <i data-lucide="help-circle"></i>
+          <div>
+            <h4>Recommended Session Length by Skin Type</h4>
+            <p>Click your skin type below to view safe recommended starting session times.</p>
+          </div>
+        </div>
+        <div class="sg-tabs" id="skinTabs">
+          <button type="button" class="sg-tab active" data-type="1">Type I (Fair/Sensitive)</button>
+          <button type="button" class="sg-tab" data-type="2">Type II (Fair/Light)</button>
+          <button type="button" class="sg-tab" data-type="3">Type III (Medium/Olive)</button>
+          <button type="button" class="sg-tab" data-type="4">Type IV (Dark/Tolerant)</button>
+        </div>
+        <div class="sg-panel" id="skinPanel">
+          <div class="sg-panel__title" id="skinTitle">Skin Type I — Fair / Highly Sensitive</div>
+          <p id="skinDesc">Typically fair skin with freckles, blonde or red hair, and blue/green eyes. Burns easily and tans with difficulty. Recommended: Not advised to use tanning equipment or keep sessions to 3–4 minutes maximum with high hydration.</p>
+          <div class="sg-panel__time" id="skinTime">Max Initial Session: <strong>3–4 Minutes</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENT WELCOME PACK & DIGITAL DOSSIER (Interactive 3D Folder) -->
+  <section class="section dossier-section" id="welcome-pack">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="section-tag"><i data-lucide="folder-archive"></i> Welcome Pack &amp; Verification</span>
+        <h2 class="section-title">Your Complete Solarium <em>Safety Dossier</em></h2>
+        <p class="section-desc">
+          Every hire arrives with physical certified documents and a digital welcome pack. Click the interactive 3D folder below to open, inspect, and preview all included compliance certificates and user guides.
+        </p>
+      </div>
+
+      <div class="dossier-grid">
+        <!-- 3D INTERACTIVE FOLDER STAGE -->
+        <div class="dossier-stage-wrap">
+          <div class="dossier-stage-card">
+            <div class="stage-header">
+              <span class="stage-tag"><i data-lucide="sparkles"></i> Interactive Client Pack</span>
+              <span class="stage-status"><span class="pulse-dot"></span> Certified 2026</span>
+            </div>
+
+            <!-- THE 3D FOLDER CARD -->
+            <div class="folder-display-area">
+              <label class="folder-card" for="folderToggle">
+                <input type="checkbox" id="folderToggle" class="folder-toggle" />
+
+                <!-- Floating hint -->
+                <div class="hint-wrapper">
+                  <span class="hint-text">Click to open pack</span>
+                  <svg class="hint-arrow" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 35 5 C 35 5, 15 5, 10 25 M 10 25 L 3 18 M 10 25 L 18 22" stroke="#C87941" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+
+                <div class="folder-container">
+                  <!-- Folder Back -->
+                  <svg class="folder-back" viewBox="0 0 50 40" fill="none">
+                    <path d="M0 4C0 1.79086 1.79086 0 4 0H16.524C17.721 0 18.8415 0.54051 19.574 1.4673L22.426 5.0654C23.1585 5.99219 24.279 6.5327 25.476 6.5327H46C48.2091 6.5327 50 8.32356 50 10.5327V36C50 38.2091 48.2091 40 46 40H4C1.79086 40 0 38.2091 0 36V4Z" fill="#181B22"></path>
+                  </svg>
+
+                  <!-- Search Bar -->
+                  <div class="folder-search">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" placeholder="Filter documents..." class="search-input" id="folderSearchInput" />
+                  </div>
+
+                  <!-- File 5: Delivery & Assembly Checklist -->
+                  <div class="file file-5" data-title="Delivery &amp; Setup Inspection Protocol" data-desc="Official technician sign-off covering electrical safety inspection, upstairs/downstairs placement, and sanitization verification prior to customer handover." data-tag="PDF · 1.4 MB" data-type="Inspection">
+                    <div class="shine"></div>
+                    <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="1" y="3" width="15" height="13"></rect>
+                      <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                      <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                      <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                    </svg>
+                    <div class="file-text">Delivery_Setup_Signoff.pdf</div>
+                    <div class="file-tag">PDF • 1.4 MB</div>
+                  </div>
+
+                  <!-- File 4: UV Protective Goggles Safety Guide -->
+                  <div class="file file-4" data-title="Certified UV Protective Goggles Directive" data-desc="Complete usage guide for the complimentary certified UV safety goggles included with every hire, detailing cornea protection and safe eye coverage." data-tag="PDF · 850 KB" data-type="Eye Safety">
+                    <div class="shine"></div>
+                    <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="6" cy="12" r="4"></circle>
+                      <circle cx="18" cy="12" r="4"></circle>
+                      <line x1="10" y1="12" x2="14" y2="12"></line>
+                    </svg>
+                    <div class="file-text">UV_Goggles_Safety_Guide.pdf</div>
+                    <div class="file-tag">PDF • 850 KB</div>
+                  </div>
+
+                  <!-- File 3: Personalized Skin Exposure Schedule -->
+                  <div class="file file-3" data-title="Personalized Skin Exposure &amp; Session Timing Chart" data-desc="Progressive exposure schedules tailored to Fitzpatrick Skin Types I through IV to safely stimulate melanin without overexposure or erythema." data-tag="PDF · 2.1 MB" data-type="Skin Guide">
+                    <div class="shine"></div>
+                    <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="5"></circle>
+                      <line x1="12" y1="1" x2="12" y2="3"></line>
+                      <line x1="12" y1="21" x2="12" y2="23"></line>
+                      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                      <line x1="1" y1="12" x2="3" y2="12"></line>
+                      <line x1="21" y1="12" x2="23" y2="12"></line>
+                    </svg>
+                    <div class="file-text">Skin_Exposure_Schedule.pdf</div>
+                    <div class="file-tag">PDF • 2.1 MB</div>
+                  </div>
+
+                  <!-- File 2: Solarium User Manual -->
+                  <div class="file file-2" data-title="Caribbean &amp; Solarium Operating Manual" data-desc="Step-by-step operating instructions for the twin safety timers, Body Breeze ventilation control, and safe entry/exit procedures." data-tag="PDF · 3.8 MB" data-type="User Manual">
+                    <div class="shine"></div>
+                    <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    <div class="file-text">Solarium_User_Manual.pdf</div>
+                    <div class="file-tag">PDF • 3.8 MB</div>
+                  </div>
+
+                  <!-- File 1: 0.3 EU Safety Compliance Certificate -->
+                  <div class="file file-1" data-title="Official 0.3 EU / UK Safety Certificate" data-desc="UK Regulation certificate confirming all fitted 6ft Evolution tubes strictly meet the British and European 0.3 W/m² irradiance standard." data-tag="PDF · 1.2 MB" data-type="Certification">
+                    <div class="shine"></div>
+                    <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      <polyline points="9 12 11 14 15 10"></polyline>
+                    </svg>
+                    <div class="file-text">0.3_EU_Compliance_Cert.pdf</div>
+                    <div class="file-tag">PDF • 1.2 MB</div>
+                  </div>
+
+                  <!-- Folder Front Flap -->
+                  <div class="folder-front-wrapper">
+                    <svg class="folder-front" viewBox="0 0 50 34" fill="none">
+                      <path d="M0 4C0 1.79086 1.79086 0 4 0H46C48.2091 0 50 1.79086 50 4V30C50 32.2091 48.2091 34 46 34H4C1.79086 34 0 32.2091 0 30V4Z" fill="url(#copperFolderGrad)"></path>
+                      <defs>
+                        <linearGradient id="copperFolderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stop-color="#DF945B" stop-opacity="0.95" />
+                          <stop offset="100%" stop-color="#A35A27" stop-opacity="0.95" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <div class="folder-label"></div>
+                    <div class="counter">
+                      <div class="status-dot"></div>
+                      <span class="counter-label">DOCS</span>
+                      <span class="counter-number">05</span>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+
+            <div class="stage-footer">
+              <p><i data-lucide="mouse-pointer-click"></i> Click the folder to open &amp; explore your digital welcome pack documents.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: DOCUMENT INSPECTOR & WELCOME KIT HIGHLIGHTS -->
+        <div class="dossier-info-wrap">
+          <!-- Active Document Preview Card -->
+          <div class="doc-preview-card" id="docPreviewCard">
+            <div class="dpc-badge">
+              <span class="badge badge--copper" id="docBadge"><i data-lucide="file-check"></i> Featured Document</span>
+              <span class="dpc-type" id="docType">Certification</span>
+            </div>
+            <h3 class="dpc-title" id="docTitle">Official 0.3 EU / UK Safety Certificate</h3>
+            <p class="dpc-desc" id="docDesc">
+              UK Regulation certificate confirming all fitted 6ft Evolution tubes strictly meet the British and European 0.3 W/m² irradiance standard. Delivered with every hire to ensure 100% safe, sunburn-free tanning.
+            </p>
+            <div class="dpc-meta">
+              <span id="docMeta"><i data-lucide="file-text"></i> PDF · 1.2 MB</span>
+              <span class="dpc-status"><i data-lucide="shield-check"></i> Verified Compliant</span>
+            </div>
+            <div class="dpc-actions">
+              <button type="button" class="btn btn--copper btn--sm" id="previewDocBtn">
+                <i data-lucide="download"></i> <span>Sample Preview</span>
+              </button>
+              <a href="#contact" class="btn btn--outline-copper btn--sm">
+                <i data-lucide="calendar"></i> <span>Book Hire With Pack</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Included in Every Physical Hire Delivery Box -->
+          <div class="welcome-kit-perks">
+            <h4>Included In Your Physical Delivery Pack</h4>
+            <div class="kit-grid">
+              <div class="kit-item">
+                <i data-lucide="glasses"></i>
+                <div>
+                  <strong>Free UV Safety Goggles</strong>
+                  <span>Sealed in hygienic packaging for your safety.</span>
+                </div>
+              </div>
+              <div class="kit-item">
+                <i data-lucide="shield-check"></i>
+                <div>
+                  <strong>0.3 Irradiance Certificate</strong>
+                  <span>Technician-stamped tube compliance certificate.</span>
+                </div>
+              </div>
+              <div class="kit-item">
+                <i data-lucide="sparkles"></i>
+                <div>
+                  <strong>Hospital-Grade Sanitization</strong>
+                  <span>Pre-delivery hygiene and electrical check sign-off.</span>
+                </div>
+              </div>
+              <div class="kit-item">
+                <i data-lucide="phone-call"></i>
+                <div>
+                  <strong>7-Day Technician Support</strong>
+                  <span>Direct contact line for any questions during hire.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section why-section" id="why-us">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="section-tag"><i data-lucide="award"></i> Hampshire's Trusted Leader</span>
+        <h2 class="section-title">Why Customers Choose <em>Southern Sunbed Hire</em></h2>
+        <p class="section-desc">Over a decade of reliable, punctual, and friendly service across southern England.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-card__icon">
+            <img src="assets/icons/truck.gif" alt="Free Delivery &amp; Collection Truck" class="why-card__gif" loading="lazy" />
+          </div>
+          <h4>Free Delivery &amp; Collection</h4>
+          <p>We handle all lifting, carrying, assembly, and testing. Upstairs or downstairs — no hidden transport charges across Hampshire &amp; Berkshire.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-card__icon">
+            <img src="assets/icons/clock.gif" alt="Same-Day Hire Clock" class="why-card__gif" loading="lazy" />
+          </div>
+          <h4>Same-Day Hire Available</h4>
+          <p>Getting ready for a holiday or special occasion? Call us early on 07306 885 759 and we can frequently deliver and install the same afternoon.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-card__icon">
+            <img src="assets/icons/chart.gif" alt="Flexible Hire Periods Chart" class="why-card__gif" loading="lazy" />
+          </div>
+          <h4>Flexible Hire &amp; Discounts</h4>
+          <p>From a 1-week pre-wedding booster to multi-month winter hires. Enjoy automatic tier discounts of up to 30% on longer packages with easy extensions.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-card__icon">
+            <img src="assets/icons/tubes.gif" alt="0.3 EU Compliant Tubes" class="why-card__gif" loading="lazy" />
+          </div>
+          <h4>0.3 EU Compliant Tubes</h4>
+          <p>Only certified British-manufactured 0.3 safe tanning tubes meeting strict EU/UK irradiance limits — equivalent to Mediterranean midday sun with zero burning.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-card__icon">
+            <img src="assets/icons/star.gif" alt="5-Star Rated Service Star" class="why-card__gif" loading="lazy" />
+          </div>
+          <h4>5-Star Rated &amp; Free Goggles</h4>
+          <p>Over a decade of trusted 5-star customer ratings. Complimentary approved UV safety goggles and full sanitization certification are guaranteed on every hire.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS COUNTER -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-card__number"><span class="counter" data-target="10">0</span>+</div>
+          <div class="stat-card__label">Years Serving Hampshire &amp; Berkshire</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__number"><span class="counter" data-target="1000">0</span>+</div>
+          <div class="stat-card__label">Satisfied Home Tanning Customers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__number">0.3</div>
+          <div class="stat-card__label">W/m² Safe EU Irradiance Standard</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__number"><span class="counter" data-target="26">0</span></div>
+          <div class="stat-card__label">Evolution RUVA Tubes on Caribbean Unit</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS & TESTIMONIALS -->
+  <section class="section reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="section-tag"><i data-lucide="star"></i> Client Satisfaction</span>
+        <h2 class="section-title">What Our Customers <em>Say</em></h2>
+        <p class="section-desc">Real reviews from clients who love the convenience and quality of our home solariums.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="review-card__stars">
+            <i data-lucide="star" class="star-fill"></i>
+            <i data-lucide="star" class="star-fill"></i>
+            <i data-lucide="star" class="star-fill"></i>
+            <i data-lucide="star" class="star-fill"></i>
+            <i data-lucide="star" class="star-fill"></i>
+          </div>
+          <blockquote class="review-card__quote">
+            "Absolutely brilliant service! The Caribbean 26-tube unit was delivered same-day and installed in our spare room. The tan before my holiday was incredible. Clean, professional, and friendly."
+          </blockquote>
+          <div class="review-card__author">
+            <div class="review-card__avatar">SM</div>
+            <div>
+              <strong>Sarah M.</strong>
+              <span>Basingstoke, Hampshire · 4-Week Hire</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-card__stars">
+            <i data-lucide="star" class="star-fill"></i>
+            <i data-lucide="star" class="star-fill"></i>
+            <i data-lucide="star" class="star-fill"></i>
+            <i data-lucide="star" class="star-fill"></i>
+            <i data-lucide="star" class="star-fill"></i>
+          </div>
+          <blockquote class="review-card__quote">
+            "Really professional from start to finish. The driver helped position the Elite Double lie-down upstairs, gave us clear timer instructions, and supplied free goggles. Outstanding value."
+          </blockquote>
+          <div class="review-card__author">
+            <div class="review-card__avatar">JT</div>
+            <div>
+              <strong>James T.</strong>
+              <span>Reading, Berkshire · 2-Week Hire</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-card__stars">
+            <i data-lucide="star" class="star-fill"></i>
+            <i data-lucide="star" class="star-fill"></i>
+            <i data-lucide="star" class="star-fill"></i>
+            <i data-lucide="star" class="star-fill"></i>
+            <i data-lucide="star" class="star-fill"></i>
+          </div>
+          <blockquote class="review-card__quote">
+            "We had limited space so went with the Elite Canopy over the bed. It moves effortlessly on its stand and tucks away upright. Goggles included and collection was totally stress-free. Highly recommend!"
+          </blockquote>
+          <div class="review-card__author">
+            <div class="review-card__avatar">LK</div>
+            <div>
+              <strong>Laura K.</strong>
+              <span>Newbury, Berkshire · 8-Week Hire</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & BOOKING FORM -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-tag"><i data-lucide="message-square"></i> Easy Booking</span>
+          <h2 class="section-title">Ready for Your <em>Golden Tan?</em></h2>
+          <p>Book your home sunbed hire today. For immediate same-day delivery enquiries, please call us directly.</p>
+
+          <div class="contact-cards">
+            <a href="tel:07306885759" class="cc-item cc-item--primary">
+              <div class="cc-icon"><i data-lucide="phone-call"></i></div>
+              <div>
+                <span>Call Directly (Fastest Response)</span>
+                <strong>07306 885 759</strong>
+              </div>
+            </a>
+
+            <a href="mailto:sales@southernsunbedhire.co.uk" class="cc-item">
+              <div class="cc-icon"><i data-lucide="mail"></i></div>
+              <div>
+                <span>Email Us</span>
+                <strong>sales@southernsunbedhire.co.uk</strong>
+              </div>
+            </a>
+
+            <div class="cc-item">
+              <div class="cc-icon"><i data-lucide="map-pin"></i></div>
+              <div>
+                <span>Operating Base</span>
+                <strong>Basingstoke, Hampshire (Delivering Region-Wide)</strong>
+              </div>
+            </div>
+
+            <div class="cc-item">
+              <div class="cc-icon"><i data-lucide="clock"></i></div>
+              <div>
+                <span>Opening Hours</span>
+                <strong>8:00 AM – 8:00 PM · 7 Days A Week</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-trust-badges">
+            <span><i data-lucide="check"></i> 100% Free Delivery</span>
+            <span><i data-lucide="check"></i> Free UV Goggles</span>
+            <span><i data-lucide="check"></i> Free Collection</span>
+            <span><i data-lucide="check"></i> 18+ Verified Only</span>
+          </div>
+        </div>
+
+        <!-- FORM WRAPPER -->
+        <div class="contact-form-wrap">
+          <form class="booking-form" id="bookingForm" novalidate>
+            <div class="form-badge">
+              <i data-lucide="calendar"></i> Reserve Your Dates
+            </div>
+            <h3>Book or Enquire Online</h3>
+            <p class="form-sub">Fill in your requirements below and we will confirm availability promptly.</p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formName">Your Full Name <span class="req">*</span></label>
+                <div class="input-with-icon">
+                  <i data-lucide="user"></i>
+                  <input type="text" id="formName" name="name" placeholder="Sarah Jenkins" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="formPhone">Phone Number <span class="req">*</span></label>
+                <div class="input-with-icon">
+                  <i data-lucide="phone"></i>
+                  <input type="tel" id="formPhone" name="phone" placeholder="07123 456 789" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formEmail">Email Address</label>
+                <div class="input-with-icon">
+                  <i data-lucide="mail"></i>
+                  <input type="email" id="formEmail" name="email" placeholder="sarah@example.com" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="formPostcode">Delivery Postcode <span class="req">*</span></label>
+                <div class="input-with-icon">
+                  <i data-lucide="map-pin"></i>
+                  <input type="text" id="formPostcode" name="postcode" placeholder="e.g. RG21 4AB" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formSunbed">Sunbed Model</label>
+                <div class="input-with-icon">
+                  <i data-lucide="sun"></i>
+                  <select id="formSunbed" name="sunbed">
+                    <option value="">Select a sunbed...</option>
+                    <option value="Caribbean 26-Tube (Most Popular)">Caribbean 26-Tube (Most Popular)</option>
+                    <option value="Elite Double Lie Down">Elite Double Lie Down</option>
+                    <option value="Elite Canopy">Elite Canopy</option>
+                    <option value="Not sure — please advise me">Not sure — please advise me</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="formDuration">Hire Duration</label>
+                <div class="input-with-icon">
+                  <i data-lucide="calendar"></i>
+                  <select id="formDuration" name="duration">
+                    <option value="1 Week">1 Week</option>
+                    <option value="2 Weeks">2 Weeks (10% Off)</option>
+                    <option value="4 Weeks" selected>4 Weeks (20% Off)</option>
+                    <option value="8 Weeks">8 Weeks (30% Off)</option>
+                    <option value="Long Term Hire">Long Term Hire</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="formDate">Preferred Start Date</label>
+              <div class="input-with-icon">
+                <i data-lucide="calendar-days"></i>
+                <input type="date" id="formDate" name="from" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="formMessage">Questions / Special Requirements</label>
+              <textarea id="formMessage" name="message" rows="3" placeholder="Upstairs installation notes, access instructions, etc..."></textarea>
+            </div>
+
+            <div class="form-age-confirm">
+              <label class="age-check-label">
+                <input type="checkbox" id="ageConfirm" name="age" required />
+                <span class="age-custom-box"></span>
+                <span>I confirm that all users of the sunbed are <strong>18 years of age or older</strong> (ID verified upon delivery in compliance with UK law) <span class="req">*</span></span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn--copper btn--full btn--lg" id="submitBtn">
+              <span>Submit Hire Enquiry</span>
+              <i data-lucide="send"></i>
+            </button>
+
+            <p class="form-footer-notice">
+              <i data-lucide="lock"></i> Your information is secure. We never share your details.
+            </p>
+
+            <!-- Success Alert Box -->
+            <div class="form-success-box" id="formSuccessAlert" style="display: none;">
+              <div class="fs-icon"><i data-lucide="check-circle-2"></i></div>
+              <div class="fs-text">
+                <h4>Enquiry Received!</h4>
+                <p>Thank you! Our team will contact you shortly to confirm your booking and arrange delivery.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING MOBILE BOTTOM ACTION BAR -->
+  <div class="mobile-bar" id="mobileBar">
+    <a href="tel:07306885759" class="m-btn m-btn--phone">
+      <i data-lucide="phone"></i>
+      <span>Call Now</span>
+    </a>
+    <a href="#calculator" class="m-btn m-btn--quote">
+      <i data-lucide="calculator"></i>
+      <span>Quote</span>
+    </a>
+    <a href="#contact" class="m-btn m-btn--book">
+      <i data-lucide="calendar"></i>
+      <span>Book</span>
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a href="#home" class="nav__logo nav__logo--footer">
+          <span class="logo-script">Southern</span>
+          <span class="logo-divider"></span>
+          <span class="logo-sub-wrap">
+            <span class="logo-sunbed">Sunbed</span>
+            <span class="logo-hire">Hire</span>
+          </span>
+        </a>
+        <p class="footer__about">
+          Hampshire and Berkshire's trusted specialists in salon-standard home sunbed hire. British manufactured 0.3 EU compliant equipment, free delivery, free goggles, and professional installation.
+        </p>
+        <div class="footer__contact-quick">
+          <a href="tel:07306885759"><i data-lucide="phone"></i> 07306 885 759</a>
+          <a href="mailto:sales@southernsunbedhire.co.uk"><i data-lucide="mail"></i> sales@southernsunbedhire.co.uk</a>
+        </div>
+      </div>
+
+      <div class="footer__links-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sunbeds">Our Sunbeds</a></li>
+          <li><a href="#calculator">Price Calculator</a></li>
+          <li><a href="#coverage">Delivery Coverage</a></li>
+          <li><a href="#safety">Safe Tanning Standards</a></li>
+          <li><a href="#reviews">Customer Reviews</a></li>
+          <li><a href="#contact">Book Hire Online</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links-col">
+        <h5>Our Sunbed Models</h5>
+        <ul>
+          <li><a href="#sunbeds">Caribbean 26-Tube Solarium</a></li>
+          <li><a href="#sunbeds">Elite Double Lie-Down</a></li>
+          <li><a href="#sunbeds">Elite Canopy Solarium</a></li>
+          <li><a href="#contact">Sunbeds For Sale</a></li>
+          <li><a href="#contact">Commercial &amp; Salon Hire</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links-col">
+        <h5>Delivery Towns</h5>
+        <div class="footer__areas-list">
+          <span>Basingstoke</span>
+          <span>Reading</span>
+          <span>Farnborough</span>
+          <span>Newbury</span>
+          <span>Andover</span>
+          <span>Southampton</span>
+          <span>Winchester</span>
+          <span>Guildford</span>
+          <span>Bracknell</span>
+          <span>Wokingham</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2026 Southern Sunbed Hire · Basingstoke, Hampshire · All Rights Reserved.</p>
+        <p class="footer__compliance">
+          Strictly 18+ age verification on all hires in accordance with The Sunbeds (Regulation) Act 2010 · All equipment is 0.3 W/m² EU Compliant.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="btt-btn" id="bttBtn" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
