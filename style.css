@@ -1547,7 +1547,7 @@ input:checked + .slider:before {
 
 .hiw-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   position: relative;
 }
@@ -3313,5 +3313,362 @@ input:checked + .slider:before {
 
   .btt-btn {
     bottom: 80px;
+  }
+}
+
+/* =============================================================
+   ENHANCED MOBILE OPTIMIZATION
+   ============================================================= */
+
+@media (max-width: 640px) {
+  /* Extra small mobile devices - Enhanced touch targets and readability */
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero__h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .hero__perks {
+    grid-template-columns: 1fr;
+  }
+
+  /* Mobile postcode checker */
+  .pc-input-group {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .pc-input-group input {
+    padding: 14px 16px;
+  }
+
+  .pc-input-group .btn {
+    width: 100%;
+    padding: 14px;
+  }
+
+  /* Mobile duration and tabs */
+  .calc-duration-options {
+    grid-template-columns: 1fr;
+  }
+
+  .sg-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-trust-badges {
+    grid-template-columns: 1fr;
+  }
+
+  .kit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dpc-actions {
+    flex-direction: column;
+  }
+
+  .dpc-actions .btn {
+    width: 100%;
+  }
+
+  /* Improve mobile stats layout */
+  .stats-grid {
+    gap: 20px;
+  }
+
+  .stat-card__number {
+    font-size: 2.5rem;
+  }
+
+  /* Mobile form improvements - prevent iOS zoom */
+  .booking-form h3 {
+    font-size: 1.35rem;
+  }
+
+  .input-with-icon input,
+  .input-with-icon select,
+  .booking-form textarea {
+    font-size: 16px; /* Prevents iOS auto-zoom on focus */
+    padding: 14px 14px 14px 42px;
+  }
+
+  .booking-form textarea {
+    padding: 14px;
+  }
+
+  /* Mobile navigation */
+  .nav {
+    height: 68px;
+  }
+
+  .nav__links {
+    top: 68px;
+    height: calc(100vh - 68px);
+    padding: 20px;
+  }
+
+  .nav__link {
+    padding: 12px 16px;
+    font-size: 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  /* Mobile action bar */
+  .mobile-bar {
+    padding: 8px 12px;
+  }
+
+  .m-btn {
+    font-size: 0.7rem;
+    padding: 8px 12px;
+    gap: 4px;
+  }
+
+  .m-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Touch-friendly buttons */
+  .btn {
+    min-height: 44px;
+    padding: 14px 24px;
+  }
+
+  .area-tag {
+    min-height: 40px;
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
+
+  /* Mobile spacing */
+  .section {
+    padding: 50px 0;
+  }
+
+  .postcode-checker-box {
+    padding: 28px 20px;
+  }
+
+  .contact-form-wrap {
+    padding: 28px 18px;
+  }
+
+  .bed-card__content {
+    padding: 20px 18px;
+  }
+
+  .hero-card-display {
+    padding: 14px;
+  }
+
+  /* Mobile-friendly bed specs */
+  .bed-card__specs {
+    gap: 10px;
+  }
+
+  .spec-pill {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+
+  /* Mobile why-us cards */
+  .why-card {
+    padding: 28px 20px;
+  }
+
+  /* Mobile review cards */
+  .review-card {
+    padding: 24px 20px;
+  }
+
+  .review-card__quote {
+    font-size: 0.94rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Very small mobile devices */
+  .folder-card {
+    width: 180px;
+    height: 135px;
+    transform: scale(0.9);
+  }
+
+  .hint-wrapper {
+    display: none; /* Hide click hint on very small screens */
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 40px 0 20px;
+  }
+
+  .hero__inner {
+    padding-bottom: 30px;
+    gap: 30px;
+  }
+
+  .ticker-strip {
+    font-size: 0.75rem;
+    padding: 10px 0;
+  }
+
+  .ticker__track span {
+    font-size: 0.75rem;
+  }
+
+  .sale-banner {
+    padding: 24px 18px;
+  }
+
+  /* Small screen buttons */
+  .btn--lg {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+
+  .btn--sm {
+    padding: 7px 14px;
+    font-size: 0.8rem;
+  }
+
+  /* Very small screen typography */
+  .hero__h1 {
+    font-size: 1.75rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-desc {
+    font-size: 1rem;
+  }
+
+  /* Compact cards */
+  .hiw-card,
+  .why-card,
+  .review-card {
+    padding: 20px 16px;
+  }
+
+  /* Footer adjustments */
+  .footer {
+    padding: 60px 0 20px;
+  }
+
+  .footer__top {
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  /* Mobile dossier section */
+  .dossier-stage-card {
+    padding: 24px 18px;
+  }
+
+  .doc-preview-card {
+    padding: 24px 18px;
+  }
+}
+
+/* Landscape orientation optimization */
+@media (max-width: 900px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: 40px 0 20px;
+  }
+
+  .hero__inner {
+    padding-bottom: 30px;
+  }
+
+  .nav__links {
+    height: calc(100vh - 68px);
+    padding: 20px;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  /* Enhance touch targets for mobile devices */
+  .btn,
+  .nav__link,
+  .area-tag,
+  .sg-tab,
+  .duration-btn {
+    min-height: 44px; /* Apple's recommended minimum touch target */
+  }
+
+  /* Remove hover effects on touch devices */
+  .bed-card:hover {
+    transform: none;
+  }
+
+  .why-card:hover {
+    transform: none;
+  }
+
+  .review-card:hover {
+    transform: none;
+  }
+
+  /* Improve tap response */
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    -webkit-tap-highlight-color: rgba(200, 121, 65, 0.2);
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Sharper borders and shadows on retina displays */
+  .bed-card,
+  .why-card,
+  .review-card,
+  .contact-form-wrap {
+    border-width: 0.5px;
+  }
+}
+
+/* Accessibility: Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .ticker__track {
+    animation: none;
   }
 }
