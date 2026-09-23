@@ -4,9 +4,8 @@
    · Lucide Icons initialization
    · GSAP & ScrollTrigger Luxury Animations
    · Silk/Particle Hero Canvas
-   · Interactive Hire Price & Package Calculator
    · Instant Postcode & Delivery Area Validator
-   · Solarium UV Lighting Mode Switch
+   · Sunbed UV Lighting Mode Switch
    · Safe Tanning Skin Type Advisor
    · Confetti Celebration & Form Validation
    · Mobile Navigation Drawer & Sticky Header
@@ -291,8 +290,8 @@
       postcodeResult.innerHTML = `
         <i data-lucide="check-circle" style="color:#059669;width:20px;height:20px;"></i>
         <div>
-          <strong>Great News! 100% Free Delivery to ${match.town} (${q})</strong>
-          <p style="font-size:0.85rem;margin-top:2px;">${match.sameDay ? '⚡ Same-day delivery is frequently available!' : 'Fast delivery and free installation included.'} Free goggles with every hire.</p>
+          <strong>Great News! We Deliver to ${match.town} (${q})</strong>
+          <p style="font-size:0.85rem;margin-top:2px;">${match.sameDay ? '⚡ Same-day delivery is frequently available!' : 'Professional delivery and installation included.'}</p>
         </div>
       `;
     } else if (prefixMatch) {
@@ -301,7 +300,7 @@
         <i data-lucide="check-circle" style="color:#059669;width:20px;height:20px;"></i>
         <div>
           <strong>Delivery Available to your district (${q})!</strong>
-          <p style="font-size:0.85rem;margin-top:2px;">Free delivery, professional installation, and collection across your area.</p>
+          <p style="font-size:0.85rem;margin-top:2px;">Professional delivery, installation, and collection across your area.</p>
         </div>
       `;
     } else {
@@ -336,7 +335,7 @@
   });
 
   /* =============================================================
-     7. UV SOLARIUM GLOW TOGGLE
+     7. UV SUNBED GLOW TOGGLE
      ============================================================= */
   const uvToggle = $('#uvGlowToggle');
   const uvGlows = $$('.bed-card__uv-glow');
@@ -355,104 +354,6 @@
     });
   }
 
-  /* =============================================================
-     8. HIRE PRICE CALCULATOR LOGIC
-     ============================================================= */
-  const calcState = {
-    unit: 'Caribbean 26-Tube (Most Popular)',
-    baseRate: 55,
-    weeks: 4,
-    discount: 0.20,
-    lotion: true,
-    goggles: false
-  };
-
-  const summaryUnit = $('#summaryUnit');
-  const summaryDuration = $('#summaryDuration');
-  const summaryTotal = $('#summaryTotal');
-  const addonLotion = $('#addonLotion');
-  const addonGoggles = $('#addonGoggles');
-
-  function calculatePackage() {
-    const rawRent = calcState.baseRate * calcState.weeks;
-    const discountedRent = rawRent * (1 - calcState.discount);
-    
-    let extras = 0;
-    if (calcState.lotion) extras += 15;
-    if (calcState.goggles) extras += 5;
-
-    const total = Math.round(discountedRent + extras);
-
-    if (summaryUnit) summaryUnit.textContent = calcState.unit;
-    if (summaryDuration) {
-      const discPct = Math.round(calcState.discount * 100);
-      summaryDuration.textContent = discPct > 0 
-        ? `${calcState.weeks} Weeks (${discPct}% Multi-Week Discount)`
-        : `${calcState.weeks} Week (Standard)`;
-    }
-    if (summaryTotal) {
-      summaryTotal.textContent = `£${total}`;
-    }
-  }
-
-  // Model pills
-  const modelPills = $$('.model-pill');
-  modelPills.forEach(pill => {
-    pill.addEventListener('click', () => {
-      modelPills.forEach(p => p.classList.remove('active'));
-      pill.classList.add('active');
-      calcState.unit = pill.dataset.unit;
-      calcState.baseRate = parseInt(pill.dataset.rate, 10);
-      calculatePackage();
-    });
-  });
-
-  // Duration buttons
-  const durationBtns = $$('.duration-btn');
-  durationBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      durationBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      calcState.weeks = parseInt(btn.dataset.weeks, 10);
-      calcState.discount = parseFloat(btn.dataset.discount);
-      calculatePackage();
-    });
-  });
-
-  // Addons
-  if (addonLotion) {
-    addonLotion.addEventListener('change', () => {
-      calcState.lotion = addonLotion.checked;
-      calculatePackage();
-    });
-  }
-  if (addonGoggles) {
-    addonGoggles.addEventListener('change', () => {
-      calcState.goggles = addonGoggles.checked;
-      calculatePackage();
-    });
-  }
-
-  // Direct bed card select buttons
-  $$('.select-bed-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const name = btn.dataset.bedName;
-      const rate = parseInt(btn.dataset.bedRate, 10);
-      calcState.unit = name;
-      calcState.baseRate = rate;
-
-      modelPills.forEach(pill => {
-        pill.classList.toggle('active', pill.dataset.unit === name);
-      });
-
-      calculatePackage();
-      const calcEl = $('#calculator');
-      if (calcEl) {
-        calcEl.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-
   // Direct quick book buttons
   $$('.quick-book-btn').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -463,42 +364,6 @@
       }
     });
   });
-
-  // "Proceed With This Package" button
-  const applyToFormBtn = $('#applyToFormBtn');
-  if (applyToFormBtn) {
-    applyToFormBtn.addEventListener('click', () => {
-      const formSunbed = $('#formSunbed');
-      const formDuration = $('#formDuration');
-      const formMessage = $('#formMessage');
-
-      if (formSunbed) formSunbed.value = calcState.unit;
-      if (formDuration) {
-        if (calcState.weeks === 1) formDuration.value = '1 Week';
-        else if (calcState.weeks === 2) formDuration.value = '2 Weeks';
-        else if (calcState.weeks === 4) formDuration.value = '4 Weeks';
-        else if (calcState.weeks === 8) formDuration.value = '8 Weeks';
-      }
-
-      if (formMessage) {
-        const addOnsList = [];
-        if (calcState.lotion) addOnsList.push('Tan Accelerator Cream (+£15)');
-        if (calcState.goggles) addOnsList.push('Extra Safety Goggles (+£5)');
-        const addOnText = addOnsList.length ? ` Includes add-ons: ${addOnsList.join(', ')}.` : '';
-        formMessage.value = `Package Quote: ${calcState.unit} for ${calcState.weeks} weeks.${addOnText}`;
-      }
-
-      const contactSection = $('#contact');
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: 'smooth' });
-        const nameField = $('#formName');
-        if (nameField) setTimeout(() => nameField.focus(), 600);
-      }
-    });
-  }
-
-  // Initial calculation
-  calculatePackage();
 
   /* =============================================================
      9. SAFE TANNING SKIN TYPE ADVISOR
